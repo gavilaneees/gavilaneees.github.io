@@ -146,6 +146,141 @@
 								<article>
 									<header>
 										<!-- <span class="date">April 24, 2017</span>-->
+										<h2>Valores obtenidos</h2>
+									</header>
+									<p>Los valores empleados para realizar las gráficas se muestran a continuación:</p>
+									<div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>Archivo</th>
+													<th>Modo de ejecución</th>
+													<th>Tiempo</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>filter.py</td>
+													<td>local[2] en Cloud</td>
+													<td>8:58</td>
+												</tr>
+												<tr>
+													<td>filter.py</td>
+													<td>local[4] en Cloud</td>
+													<td>7:44</td>
+												</tr>
+												<tr>
+													<td>filter.py</td>
+													<td>local[8] en Cloud</td>
+													<td>7:42</td>
+												</tr>
+												<tr>
+													<td>filter.py</td>
+													<td>executor 4 cores 4 en Cloud</td>
+													<td>4:23</td>
+												</tr>
+												<tr>
+													<td>filter.py</td>
+													<td>executor 2 cores 4 en Cloud</td>
+													<td>4:30</td>
+												</tr>
+												<tr>
+													<td>filter.py</td>
+													<td>local[2] en local</td>
+													<td>6:31</td>
+												</tr>
+												<tr>
+													<td>filter.py</td>
+													<td>local[4] en local</td>
+													<td>4:46</td>
+												</tr>
+												<tr>
+													<td>filter.py</td>
+													<td>local[8] en local</td>
+													<td>2:05</td>
+												</tr>
+												<tr>
+													<td>filter.py</td>
+													<td>executor 4 cores 4 en local</td>
+													<td>3:11</td>
+												</tr>
+												<tr>
+													<td>filter.py</td>
+													<td>executor 2 cores 4 en local</td>
+													<td>3:02</td>
+												</tr>
+												<tr>
+													<td>pr.py</td>
+													<td>local[1] en Cloud</td>
+													<td>14,24</td>
+												</tr>
+												<tr>
+													<td>pr.py</td>
+													<td>local[2] en Cloud</td>
+													<td>14,44</td>
+												</tr>
+												<tr>
+													<td>pr.py</td>
+													<td>local[4] en Cloud</td>
+													<td>14,67</td>
+												</tr>
+												<tr>
+													<td>pr.py</td>
+													<td>local[8] en Cloud</td>
+													<td>14,89</td>
+												</tr>
+												<tr>
+													<td>pr.py</td>
+													<td>executor 4 cores 4 en Cloud</td>
+													<td>31,66</td>
+												</tr>
+												<tr>
+													<td>pr.py</td>
+													<td>executor 2 cores 4 en Cloud</td>
+													<td>20,78</td>
+												</tr>
+												<tr>
+													<td>pr.py</td>
+													<td>local[1] en local</td>
+													<td>13,66</td>
+												</tr>
+												<tr>
+													<td>pr.py</td>
+													<td>local[2] en local</td>
+													<td>11,47</td>
+												</tr>
+												<tr>
+													<td>pr.py</td>
+													<td>local[4] en local</td>
+													<td>10,95</td>
+												</tr>
+												<tr>
+													<td>pr.py</td>
+													<td>local[8] en local</td>
+													<td>12,03</td>
+												</tr>
+												<tr>
+													<td>pr.py</td>
+													<td>executor 4 cores 4 en local</td>
+													<td>06,83</td>
+												</tr>
+												<tr>
+													<td>pr.py</td>
+													<td>executor 2 cores 4 en local</td>
+													<td>05,03</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+									</article>
+								<article>
+									<header>
+										<!-- <span class="date">April 24, 2017</span>-->
 										<h2>Conclusiones</h2>
 									</header>
 									<p>Observando las gráficas del apartado anterior se puede llegar a la conclusión de que para "filter.py" local[] en Google Cloud es muy lento, ya que necesita estar abriendo el bucket constantemente por como está hecho el programa. En local, local[] con ocho threads es la más rápida con diferencia, ya que al contrario de lo anterior, no tiene el retardo de acceder al bucket. Con executors y cores no hay mucha diferencia entre los dos. Como detalle, comentar que cada vez que se quiera hacer un filter se necesita ejecutar el "user.py".</p>
