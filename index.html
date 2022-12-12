@@ -47,8 +47,8 @@
 							<article class="post featured">
 								<header class="major">
 									<span class="date">3 de diciembre de 2022</span>
-									<h2><a href="#">Recomendador<br />
-									de anime</a></h2>
+									<h2>Recomendador<br />
+									de anime</h2>
 									<p>En esta página describiremos nuestro proyecto basado en un recomendador de anime que proporciona el usuario el que más le puede gustar en función de diversos criterios.</p>
 								</header>
 								<a href="#" class="image main"><img src="images/pic01.jpg" alt="" /></a>
@@ -62,113 +62,99 @@
 								<article>
 									<header>
 										<!-- <span class="date">April 24, 2017</span>-->
-										<h2><a href="#">Descripción del problema</a></h2>
+										<h2>Descripción del problema</h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
+									<p>Siempre que acabamos un anime estamos pensando en cual será el siguiente, lo cual nos lleva mucho tiempo hasta encontrar uno que nos pueda gustar. Aún así, incontables veces empezamos uno pensando que puede ser interesante, pero lo dejamos a medias porque no nos engancha. Para solucionar esto y poder encontrar qué ver más rápido y con más eficacia vamos a desarrollar una aplicación que en función de los gustos del usuario pueda recomendarle un anime que le vaya a gustar.</p>
+								</article>
+								<article>
+									<header>
+										<!-- <span class="date">April 24, 2017</span>-->
+										<h2>Necesidad de Big Data</h2>
+									</header>
+									<p>Necesitamos el Big Data debido a que nuestros archivos son muy pesados (llegando alguno a pesar X GB) y para procesar más eficientemente toda la información que tenemos en cuenta, como el género del anime, su rating, su estudio...</p>
+								</article>
+								<article>
+									<header>
+										<!-- <span class="date">April 24, 2017</span>-->
+										<h2>Datos utilizados<br />
+										y su descripción</h2>
+									</header>
+									<p>Los datasets que hemos utilizado para desarrollar nuestra aplicación son:
+									    <ul>
+											<li><a href="">AnimeList.csv:</a> contiene todos los animes con todos los atributos que tiene cada uno y a partir de los cuales vamos a realizar el filtrado.</li>
+											<li><a href="">userAnimeList.csv:</a> contiene una gran número de usuarios, incluyendo los animes que se han visto y la nota que le han puesto.</li>
+											<li><a href="">userList.csv:</a> contiene una lista de todos los usuarios, incluyendo sus datos personales y un pequeño conteo de los animes que ha visto, que planea ver o que ha dejado de ver.</li>
+										</ul>
+										Cada uno se puede encontrar pulsando sobre su nombre y se puede descargar en la página de Kaggle, que es de donde los hemos obtenido.</p>
+								</article>
+								<article>
+									<header>
+										<!-- <span class="date">April 24, 2017</span>-->
+										<h2>Aplicación Desarrollada</h2>
+									</header>
+									<p>Nuestra aplicación trata sobre un recomendador de anime que proporciona al usuario el anime que más le puede interesar en función de varios criterios que el usuario introduce previamente. Los criterios para realizar la búsqueda son género, source (de donde vienen el anime, es decir de un libro, una novela, etc), rating (Pegi de edad) y el estudio que anima dicho anime. Para hacer la recomendación vamos a buscar entre los miles de usuarios que tenemos, aquellos que más animes hayan visto que coincidan con las caraterísitcas que pide el usuario. Esto es interesatne ya que, si le mostramos los 5 animes que más le han gustado al usuario que más animes de ese estilo ha visto, probablmente sean del agrado del usuario que está utilizando nuestra aplicación (para ver cuales son los 5 que más le han gustado, cogemos los 5 que tienen un score más alto puesto por ese usuario).</p>
+									<p>No hemos podido comparar con otras aplicaciones similares, ya que no hemos encontrado ningún recomendador de series o animes con código fuente disponible.</p>
+								</article>
+								<article>
+									<header>
+										<!-- <span class="date">April 24, 2017</span>-->
+										<h2>Infraestructura empleada</h2>
+									</header>
+									<p>La infraestructura que hemos empleado para desarrollar nuestra aplicación es:
+										<ul>
+											<li>Github: donde tenemos alojado el código de la aplicación y así poder trabajar en remoto.</li>
+											<li>Microsoft Visual Studio Code: lo hemos utilizado como IDE para desarrollar la aplicación.</li>
+											<li>PySpark: usado como modelo de programación para obtener datos de los .csv y procesar los resultados.</li>
+											<li>OS, Pandas e Inquierer: otras librerías empleadas para poder extraer la información de los .csv y procesarla.</li>
+											<li>Google Cloud: infraestructura en la cual hemos llevado a cabo los experimentos de nuestra aplicación y así poder comparar con cuanto tardaba ejecutándola también en local.</li>
+											<li>Microsoft Excel: para una vez obtenidos los resultados de tiempos de ejecución, poder mostrar las gráficas.</li>
+										</ul>
+									</p>
+								</article>
+								<article>
+									<header>
+										<!-- <span class="date">April 24, 2017</span>-->
+										<h2>Cómo usar el código</h2>
+									</header>
+									<p>Para poder ejecar nuestra aplicación es necesario instalar cuatro módulos que usamos, que son PySpark, OS, Pandas e Inquierer. Además, es necesario tener instalado Java y actualizar la variable PATH en el fichero ~/.profile y en nuestra sesión actual. Todos los comandos necesarios para realizar estos procesos se explican con más detalle en el README.md de <a href="https://github.com/Jealbacal/Clo_project">nuestro repositorio.</a>
 									<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
+										<li><a href="https://github.com/Jealbacal/Clo_project" class="button">Nuestro repositorio</a></li>
 									</ul>
 								</article>
 								<article>
 									<header>
 										<!-- <span class="date">April 24, 2017</span>-->
-										<h2><a href="#">Necesidad de Big Data</a></h2>
+										<h2>Resultados obtenidos</h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-									<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
+									<p>Para obtener las siguientes gráficas hemos ejecutado "filter.py" y "pr.py" tanto en Google Cloud como en local para ver la diferencia de tiempos.</p>
+									<p>Los resultados que hemos obtenido ejecutando filter.py son los siguientes (en minutos):</p>
+									<img src="images/c.png" alt="Grafica 1" />
+									<p>Los resultados que hemos obtenido ejecutando pr.py son los siguientes (en segundos):</p>
+									<img src="images/b.png" alt="Grafica 2" />
+									<p>Estas gráficas han sido realizadas en Excel y la máquina usada en local dispone de ....</p>
 								</article>
 								<article>
 									<header>
 										<!-- <span class="date">April 24, 2017</span>-->
-										<h2><a href="#">Datos utilizados<br />
-										y su descripción</a></h2>
+										<h2>Conclusiones</h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
-									<p>Los datos usados son: y se pueden encontrar en: (links)</p>
-									<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
+									<p>Observando las gráficas del apartado anterior se puede llegar a la conclusión de que para "filter.py" local[] en Google Cloud es muy lento, ya que necesita estar abriendo el bucket constantemente por como está hecho el programa. En local, local[] con ocho threads es la más rápida con diferencia, ya que al contrario de lo anterior, no tiene el retardo de acceder al bucket. Con executors y cores no hay mucha diferencia entre los dos. Como detalle, comentar que cada vez que se quiera hacer un filter se necesita ejecutar el "user.py".</p>
+									<p>Observando la gráfica para "pr.py", se puede ver que la mayor diferencia ahora se encuentra para los executors y cores, habiendo muy poca diferencia en los hilos. Aún así, la mejor opción en es local con executors 2 core 4. </p>
 								</article>
 								<article>
 									<header>
 										<!-- <span class="date">April 24, 2017</span>-->
-										<h2><a href="#">Aplicación Desarrollada</a></h2>
+										<h2>Dificultades y optimizaciones</h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
-									<p>Descripción de la solución y comparison with existing work on the problem.</p>
-									<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
+									<p>Las dificultades que nos hemos encontrado en el desarrollo de la aplicación son ...Además, algunas optimizaciones que se podrían llevar a cabo son:</p>
 								</article>
 								<article>
 									<header>
 										<!-- <span class="date">April 24, 2017</span>-->
-										<h2><a href="#">Infraestructura empleada</a></h2>
+										<h2>Logros y próximos objetivos</h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
-									<p>infraestructura empleada (pyspark, cloud...).</p>
-									<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<!-- <span class="date">April 24, 2017</span>-->
-										<h2><a href="#">Cómo usar el código</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
-									<p>código</p>
-									<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<!-- <span class="date">April 24, 2017</span>-->
-										<h2><a href="#">Resultados obtenidos</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
-									<p>Gráficas y explicaciones.</p>
-									<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<!-- <span class="date">April 24, 2017</span>-->
-										<h2><a href="#">Conclusiones</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-									<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<!-- <span class="date">April 24, 2017</span>-->
-										<h2><a href="#">Dificultades y optimizaciones</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-									<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<!-- <span class="date">April 24, 2017</span>-->
-										<h2><a href="#">Logros y próximos objetivos</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-									<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
+									<p>Gracias a nuestra aplicación, un usuario que quiera saber un anime que ver y no tener que estar probando cuales le pueden gustar o no, podrá ahorrar mucho tiempo en ello. Tan solo tras obtener el resultado de nuestra aplicación tendrá a su disposición animes de su agrado en base a sus gustos. </p>
+									<p>Gracias a haber desarrollado esta aplicación hemos aprendido muchos aspectos interesantes del Big Data y muchas de sus posibles aplicaciones en aspectos del día a día. Algunos aspectos que se podrían mejorar como próximos objetivos serían ... Como último detalle, indicar que los enlaces a los datasets y al repositorio se encuentran en los apartados de "Datos utilizados y su descripción" y "Cómo usar el código" respectivamente.</p>
 								</article>
 							</section>
 
